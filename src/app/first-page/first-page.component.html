@@ -1,0 +1,16 @@
+<div class="container col-md-12">
+  <br/>
+  <h4 class="label"> What is you name? </h4>
+
+  <input [(ngModel)]="outputName.name" class="form-control input-lg" type="text" placeholder="Add your name"/>
+  <br/>
+
+  <button (click)="onNext()" class="btn btn-info btn-md">Submit</button>
+
+  <div >
+    <br/>
+    <p class="warning">
+      {{message}}
+    </p>
+  </div>
+</div>

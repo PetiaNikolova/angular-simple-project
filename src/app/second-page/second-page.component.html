@@ -1,0 +1,11 @@
+<div class="container col-md-12">
+  <br/>
+  <h4 class="label">Your reversed name is:</h4>
+
+  <div class="output">
+     <span *ngFor="let char of word; let i = index" [style.color]="getColor( i )">{{char}}</span>
+  </div>
+
+  <br/>
+  <button (click)="onBack()" class="btn btn-sm">Back</button>
+</div>
